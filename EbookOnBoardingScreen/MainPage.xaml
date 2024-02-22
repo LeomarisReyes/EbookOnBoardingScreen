@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="EbookOnBoardingScreen.MainPage">
+
+          <Grid RowDefinitions="*,Auto,Auto,Auto,Auto"
+                ColumnDefinitions="*,Auto"
+                RowSpacing="25" 
+                Padding="30,30">
+
+            <Image Grid.Row="0"
+                   Grid.Column="0" Grid.ColumnSpan="2"
+                Source="model" 
+                HeightRequest="350"
+                HorizontalOptions="Center" />
+
+            <!--<Label Text="Read Your &#10;Favorite Books" FontSize="30" FontAttributes="Bold"/>-->
+
+            <Label Grid.Row="1"
+                   Grid.Column="0" Grid.ColumnSpan="2"
+                   FontSize="35"> 
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span  Text="Read Your &#10;Favorite Books" FontAttributes="Bold"/> 
+                    </FormattedString> 
+                </Label.FormattedText>
+            </Label>
+             
+            <Line Grid.Row="2"
+                  Grid.Column="0" Grid.ColumnSpan="2" X1="0"  X2="90"  
+                  Stroke="#3d52af"
+                  Margin="-4,0,0,0"
+                  StrokeThickness="10"  />
+
+            <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="We've put together most books so you can find and enjoy your favorite &#10;books."
+                   FontSize="18"/>
+
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Skip" FontSize="19" VerticalTextAlignment="Center"/>
+
+            <Button Grid.Row="4" Grid.Column="1" ImageSource="arrow" Padding="0" HeightRequest="70" WidthRequest="70" CornerRadius="35" BackgroundColor="#3d52af" HorizontalOptions="End"/>
+
+    </Grid>
+
+</ContentPage>
+
